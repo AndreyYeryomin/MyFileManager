@@ -2,12 +2,15 @@
 class FileManager 
 {
  public $dir;
+
     function __construct($dir) {
  $this->dir = $dir;
     }
 	public function getList()
 	{
-		$dir = $this->dir;
+			$dir = $this->dir;
+
+		
 		$listWin1251 = scandir($dir);
 		$handle = opendir($dir);
 
