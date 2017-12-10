@@ -1,0 +1,52 @@
+
+table td a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	vertical-align: top;
+}
+.selected{
+background-color: blue;
+}
+table td p{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	display: inline;
+	vertical-align: top;
+}
+table td.size{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	display: inline;
+	vertical-align: top;
+}
+.dir span{
+    width: 25px;
+    height: 22px;
+    background: url(../img/Folder.png);
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.file span{
+    width: 25px;
+    height: 25px;
+    background: url(../img/file.png);
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.side{
+	display: inline-block;
+	width: 49%;
+}
+.leftSide{
+	border-right: 1px solid silver;
+	margin-right: 10px;
+}
+input.path{
+	width: 98%;
+	margin-right: 10px;
+}

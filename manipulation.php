@@ -1,9 +1,16 @@
-<?php if($_GET['DIR']==""){
-$curentDir = $dir;
+<?php if($_POST['goLeft']==""){
+$curentDirLeft = $curentDirLeft;
 }else{
-	$curentDir = $_GET['DIR'];
-		$FileManager->changeDir($curentDir);
+	$curentDirLeft = $_POST['goLeft'];
+		$FileManager->changeDir($curentDirLeft);
 
 	
 }
+if($_POST['backLeft'] == ""){
+	$curentDirLeft =$curentDirLeft;
+}else{
+	$curentDirLeft =dirname($_POST['backLeft']);
+	$FileManager->changeDir($curentDirLeft);
+}
+
 ?>
